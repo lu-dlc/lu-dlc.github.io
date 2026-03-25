@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luu.dlc</title>
+
+    <!--Import typography-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/anr5gvr.css">
+
+    <!--Import style sheet-->
+        <link rel="stylesheet" href="css/resets/reset_meyer.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+    <!--Import javascript files-->
+        <script src="js/proyectList.js"></script>
+        <script src ="js/portfolio.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <img src="img/favicon.gif">
+    </header>
+
+    <!--Content-->
+    <div class="content">
+         <!--Columna izquerda-->
+        <div class="left">
+            <iframe width="" height="" src="https://www.youtube.com/embed/eyWJqzye-rI?si=-mNGcvzGQ7vlSJQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--<iframe src="https://www.youtube.com/watch?v=eyWJqzye-rI"></iframe>-->
+        </div>
+
+        <!--Columna derecha-->
+        <div class="right">
+            <div class="preview">
+                <div id="previewImg"><img src="img/preview/motion.webp"></div>
+                <p id="previewText"><b>Nombre proyecto:[]</b> Año: []</p>
+            </div>
+            <div class="menu">
+                <div class="proyectList" id="proyectList"></div>
+                <div class="navbar">
+                    <p>Sort element by</p>
+                    <div class="dropdown">
+                        <button id="sort">Sort button</button>
+                        <div id="dropdown-sort" class="dropdown-sort">
+                            <p id = "ID-sort">ID</p>
+                            <p id = "name-sort">name</p>
+                             <p id = "year-sort">year</p>
+                        </div>
+                    </div>
+                <button id="switch"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

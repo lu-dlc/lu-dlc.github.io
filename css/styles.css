@@ -1,0 +1,146 @@
+:root{
+    /*colour*/
+    --principal-M: #0000FF;
+    --principal-L: #0000FF20;
+
+    --neutral-black: #000000;
+    --neutral-white: #FFFFFF;
+    --neutral-white-80: #FFFFFF80;
+
+    --transparent:#FFFFFF00;
+    
+    /*typography*/
+    --body: "Space Mono", courier, monospace;
+    --title: /*'Pp-mondwest-regular',*/ "argent-pixel-cf", georgia, 'Times New Roman', times, serif;
+
+    font-size: 16px;
+}
+
+/*text styles*/
+p{
+    font-family: var(--body);
+    color: var(--neutral-white)
+}
+
+h1 {
+    font-family: var(--title);
+    font-size: 2.5em;
+}
+
+h2{
+    font-family: var(--body);
+    font-size: 1.5em;
+}
+
+a {
+    font-family: var(--body);
+    color: var(--principal-M);
+    background-color: var(--neutral-white);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*box styles*/
+body{
+    padding: 0px 96px;
+    background-image: url("../img/BG.webp");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: var(--neutral-white);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: right;
+    align-content: end;
+    
+}
+
+header img{
+    height: 50%;
+}
+/*class styles*/
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width:75%;
+}
+
+.left iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 25%;
+    gap: 8px;
+}
+
+.proyectList{
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.proyectList a{
+    width: fit-content;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.dropdown-sort{
+    display: none;
+    /*flex-direction: column;*/
+    position: absolute;
+    float: right;
+    background-color: var(--neutral-white);
+    /* margin-top: 16px; */
+    padding:0px;
+    z-index: 1;
+    cursor: pointer;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-sort {
+    display: block;
+}
+
+.dropdown-sort p{
+    padding: 0px;
+    color:var(--principal-M) ;
+}
+
+.preview p{
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  /*max-height: 3.6em;
+  line-height: 1.8em;*/
+}
