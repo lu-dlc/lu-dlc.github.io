@@ -19,9 +19,15 @@
 /*text styles*/
 p{
     font-family: var(--body);
-    color: var(--neutral-white)
+    color: var(--neutral-black);
+    background-color: var(--neutral-white);
 }
 
+strong, b{
+    /*font-weight: 700;*/
+    font-family: var(--title);
+    /*font-size: 1.2em;*/
+}
 h1 {
     font-family: var(--title);
     font-size: 2.5em;
@@ -30,6 +36,13 @@ h1 {
 h2{
     font-family: var(--body);
     font-size: 1.5em;
+}
+
+h3{
+    font-family: var(--title);
+    font-size: 1.2em;
+    color: var(--neutral-white);
+    background-color: var(--principal-M);
 }
 
 a {
@@ -43,23 +56,42 @@ a:hover {
     text-decoration: underline;
 }
 
+button {
+    font-family: var(--body);
+    color: var(--principal-M);
+    background-color: var(--neutral-white);
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1px;
+}
+
+button img{
+    fill: var(--neutral-white);
+    background-color: none;
+}
+
 /*box styles*/
 body{
-    padding: 0px 96px;
-    background-image: url("../img/BG.webp");
+    padding: 0px 32px;
+    background-image: url("../img/BGpages.webp");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
     background-color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:24px;
 }
 
 header{
     display: flex;
     flex-direction: row;
-    height: 10vh;
-    justify-content: right;
+    height: 20vh;
+    justify-items: right;
     align-content: end;
-    
+    max-width: 1520px;
 }
 
 header img{
@@ -70,22 +102,39 @@ header img{
     display: flex;
     flex-direction: row;
     gap: 24px;
+    max-width: 1520px;
+    justify-self: center;
+    align-items: center;
 }
-.left{
+.threeFour{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width:75%;
+    gap: 8px;
+    max-height: 960px;
+     overflow: hidden;
 }
 
-.left iframe{
+.threeFour p, a{
+    width: fit-content;
+}
+
+.threeFour img{
+    flex: 1 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.threeFour iframe{
     aspect-ratio: 16 / 9;
     width: 100%;
 }
 
-.right{
+.oneFour{
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    /*padding: 16px;*/
     width: 25%;
     gap: 8px;
 }
@@ -136,6 +185,13 @@ header img{
     color:var(--principal-M) ;
 }
 
+.preview{
+    height: 200px;
+    /*border: 2px dotted; /* Required for border-image */
+    /*border-color: var(--neutral-white);*/
+    /*padding: 16px;*/
+    /*border-image: url(../img/borde.webp) 15 round;*/
+}
 .preview p{
   display: block;/* or inline-block */
   text-overflow: ellipsis;
@@ -143,4 +199,15 @@ header img{
   overflow: hidden;
   /*max-height: 3.6em;
   line-height: 1.8em;*/
+}
+
+/*Responsive*/
+
+@media only screen and (min-width: 992px) {
+    
+}
+
+@media only screen and (min-width: 1200px){
+    .body{padding: 0px, 96px;}
+    .preview{height: 300px;}
 }
