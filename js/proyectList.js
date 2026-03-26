@@ -11,7 +11,7 @@ const proyects = //array de objectos con información de los proyectos
         description: "Incluye mi demoreel y proyectos de motion graphics realizados a lo largo de los años, no dudes en echarle un ojo ;)",
         },*/
         {
-        id: "03",
+        id: "04",
         img: "soria",
         imgHover:"soria-hover",
         title: "Cartel Certamen Cortos de Soria",
@@ -29,7 +29,7 @@ const proyects = //array de objectos con información de los proyectos
         description: "Propuesta de portada para la novela 1984 de George Orwell.",
         },
         {
-        id: "04",
+        id: "03",
         img: "disco",
         imgHover: "disco-hover",
         title: "In Rainbows: Special edition",
@@ -44,16 +44,25 @@ const proyects = //array de objectos con información de los proyectos
         title: "Romántica ilustración",
         year:"2022",
         date: "202211",
-        description: "Propuesta de ilustración de prensa para el artículo Romántica de Marta Sanz.",
+        description: "Propuesta de ilustración de prensa para el artículo Romántica.",
         },
         {
-        id: "06",
+        id: "99",
         img: "carteleria",
         imgHover: "carteleria-hover",
-        title: "Diseño gráfico y cartelería",
+        title: "Archivo diseño   ",
         year: "2024",
         date: "202409",
         description: "",
+        },
+        {
+        id: "02",
+        img: "",
+        imgHover:"",
+        title: "Cartel ALETHEIA: Deadman",
+        year: "2026",
+        date: "202601",
+        description: "Cartel para el corto ALETHEIA: Deadman, de Horokuk Studios."
         }
     ]
 

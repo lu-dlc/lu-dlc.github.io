@@ -13,7 +13,7 @@ function printLinks(){
     let html = "";
 
     for(i=0; i<proyects.length; i++){
-        html += `<a href="` + proyects[i].id + `.html" id="`+ proyects[i].id + `">` + proyects[i].id + `-` + proyects[i].title + `</a>`
+        html += `<a href="` + proyects[i].id + `.html" id="`+ proyects[i].id + `"> ->` + proyects[i].id + `-` + proyects[i].title + `</a>`
         //console.log("title is " + html);
         document.getElementById("proyectList").innerHTML = html;
     }
@@ -100,8 +100,9 @@ function showDesc(){
     let desc = document.getElementById("previewText");
     let img = document.getElementById("previewImg");
 
-    const functions = [];
-    const link = [];
+    let functions = [];
+    let link = [];
+    let link00 = document.getElementById("00");
 
     /*let link01 = document.getElementById(proyects[0].id);
     
@@ -122,7 +123,7 @@ function showDesc(){
 
             link[i].addEventListener("mouseenter", function(){
                 console.log("Mouse Enter " + i);
-                htmlText = proyects[i].title + ` Año:` + proyects[i].year + `<br>` /*+ proyects[i].description*/;
+                htmlText = `<strong>` + proyects[i].title + `</strong> <br> Año:` + proyects[i].year + `<br>` + proyects[i].description;
                 htmlImg = `<img src="img/preview/` + proyects[i].img + `.webp"></img>`;
                 //console.log(htmlText)
                 desc.innerHTML = htmlText;
@@ -131,7 +132,7 @@ function showDesc(){
 
             link[i].addEventListener("mouseleave", function(){
                 console.log("Mouse Leave " + i);
-                htmlText = "<b>Nombre proyecto: []</b> Año: []"
+                htmlText = "<b>Nombre proyecto: []</b> <br> Año: [] <br> Descripción: []"
                 htmlImg = `<img src="img/preview/motion.webp">`;
                 desc.innerHTML = htmlText;
                 img.innerHTML = htmlImg;
@@ -142,10 +143,26 @@ function showDesc(){
     for(let i=0; proyects[i].length;i++){
         functions[i]();
     }
-functions[0]();
+
+    functions[0]();
     functions[1]();
     functions[2]();
     functions[3]();
     functions[4]();
+
+    link00.addEventListener("mouseenter", function(){
+        htmlText= `<strong>Motion graphics collection</strong> <br> Año: 2022-2026<br>`;
+        htmlImg = `<img src="img/preview/motion.webp"></img>`;
+        desc.innerHTML = htmlText;
+        img.innerHTML = htmlImg;
+    })
+
+    link00.addEventListener("mouseleave",function(){
+        htmlText = "<b>Nombre proyecto: []</b> <br> Año: [] <br> Descripción: []"
+        htmlImg = `<img src="img/preview/motion.webp">`;
+        desc.innerHTML = htmlText;
+        img.innerHTML = htmlImg;
+    })
+
     console.log(functions)
 }
