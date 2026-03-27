@@ -13,12 +13,13 @@ function printLinks(){
     let html = "";
 
     for(i=0; i<proyects.length; i++){
-        html += `<a href="` + proyects[i].id + `.html" id="`+ proyects[i].id + `"> ->` + proyects[i].id + `-` + proyects[i].title + `</a>`
+        html += `<a href="` + proyects[i].id + `.html" id="`+ proyects[i].id + `"> »` + proyects[i].id + `-` + proyects[i].title + `</a>`
         //console.log("title is " + html);
         document.getElementById("proyectList").innerHTML = html;
     }
 }
 
+//función para ordenar los links
 function sortLinks(){
     const switchOrder = document.getElementById("switch"); //get switch button
     const icon = document.getElementById("iconSwitch"); //get icon
@@ -94,6 +95,7 @@ function sortLinks(){
         })
 }
 
+//función para que cada link muestre su preview
 function showDesc(){
     let htmlText = "";
     let htmlImg = "";

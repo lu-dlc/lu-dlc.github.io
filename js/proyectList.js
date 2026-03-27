@@ -62,10 +62,37 @@ const proyects = //array de objectos con información de los proyectos
         title: "Cartel ALETHEIA: Deadman",
         year: "2026",
         date: "202601",
-        description: "Cartel para el corto ALETHEIA: Deadman, de Horokuk Studios."
+        description: "Cartel para el corto ALETHEIA: Deadman, de Horokuk Studios.",
         }
     ]
 
+const motion = //array de objetos con información de los videos de motion
+	  [
+		  {
+			  id: ".1",
+			  name:"Funny Bunny Hat AMV",
+			  link:"",
+		  },
+		  {
+			  id: ".2",
+			  name:"She's My Collar",
+			  link: "",
+		  },
+		  {
+			  id: ".3",
+			  name: "Mutant Moscow",
+			  link: "",
+		  }
+	  ]
+
+const design = //array de objetos con información de los trabajos de diseño puntuales
+	  [
+		  {
+			  id:".1",
+			  name: "Cartelería: Romance and Solitude",
+			  
+		  }
+	  ]
 //test array + objects
 let card = "";
 
