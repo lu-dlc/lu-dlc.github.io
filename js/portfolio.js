@@ -135,7 +135,7 @@ function showDesc(){
             link[i].addEventListener("mouseleave", function(){
                 console.log("Mouse Leave " + i);
                 htmlText = "<b>Nombre proyecto: []</b> <br> Año: [] <br> Descripción: []"
-                htmlImg = `<img src="img/preview/motion.webp">`;
+                htmlImg = `<img src="img/preview/empty.webp">`;
                 desc.innerHTML = htmlText;
                 img.innerHTML = htmlImg;
             })
@@ -161,7 +161,7 @@ function showDesc(){
 
     link00.addEventListener("mouseleave",function(){
         htmlText = "<b>Nombre proyecto: []</b> <br> Año: [] <br> Descripción: []"
-        htmlImg = `<img src="img/preview/motion.webp">`;
+        htmlImg = `<img src="img/preview/empty.webp">`;
         desc.innerHTML = htmlText;
         img.innerHTML = htmlImg;
     })
