@@ -205,31 +205,30 @@ header img{
 }
 
 .twoImg{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 24px;
-}
-
-.twoImg img{
-    width: 50%;
 }
 
 .sixImg{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 24px;
 }
-.sixImg img{
-    width:16%;
+
+.eightImg{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 24px;
 }
 
-.preview{
-    /*height: 200px;
-    /*border: 2px dotted; /* Required for border-image */
-    /*border-color: var(--neutral-white);*/
-    /*padding: 16px;*/
-    /*border-image: url(../img/borde.webp) 15 round;*/
-}
+/*.preview{
+    height: 200px;
+    border: 2px dotted; /*Required for border-image
+    border-color: var(--neutral-white);
+    padding: 16px;
+    border-image: url(../img/borde.webp) 15 round;
+}*/
 .preview p{
   /*display: inline-block;/* or inline-block */
   height:100px;
