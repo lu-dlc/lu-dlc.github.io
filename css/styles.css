@@ -246,8 +246,17 @@ header img{
     .content{flex-direction: column;}
     .threeFour{width: 100%;}
     .oneFour{width:100%}
+    .eightImg{grid-template-columns: auto auto; gap: 16px}
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (min-width: 601px) and (max-width:989px){
+    .content{flex-direction: column;}
+    .threeFour{width: 100%;}
+    .oneFour{width:100%}
+    .eightImg{grid-template-columns: auto auto auto auto; gap: 24px}
+}
+
+@media only screen and (min-width: 990px) {
     
 }
 
