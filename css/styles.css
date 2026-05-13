@@ -204,22 +204,22 @@ header img{
     color:var(--principal-M) ;
 }
 
-.two-img{
+.twoImg{
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
 
-.two-img img{
+.twoImg img{
     width: 50%;
 }
 
-.six-img{
+.sixImg{
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
-.six-img img{
+.sixImg img{
     width:16%;
 }
 
