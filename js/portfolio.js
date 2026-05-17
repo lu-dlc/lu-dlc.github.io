@@ -166,5 +166,5 @@ function showDesc(){
         img.innerHTML = htmlImg;
     })
 
-    console.log(functions)
+    console.log(functions);
 }

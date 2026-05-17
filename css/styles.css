@@ -236,8 +236,15 @@ header img{
 }
 
 .footer{
-    margin: 0px auto;
+    margin: 0px auto 32px auto;
     gap: 24px;
+}
+
+.footer a{
+    background-color: var(--neutral-white);
+    color: var(--principal-M);
+    display: flex;
+    flex-direction: row;
 }
 
 /*Responsive*/
