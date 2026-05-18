@@ -24,6 +24,11 @@ p{
 	line-height: 1.2em;
 }
 
+.large{
+    font-size: 1.125em;
+    line-height: 1.2em;
+}
+
 strong, b{
     /*font-weight: 700;*/
     font-family: var(--title);
@@ -204,10 +209,20 @@ header img{
     color:var(--principal-M) ;
 }
 
+.buttonInv{
+    color: var(--neutral-white);
+    background-color: var(--principal-M);
+}
 .twoImg{
     display: grid;
     grid-template-columns: auto auto;
     gap: 24px;
+}
+
+.fourImg{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:24px;
 }
 
 .sixImg{
