@@ -252,14 +252,28 @@ header img{
 
 .footer{
     margin: 0px auto 32px auto;
+    display: flex;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
     gap: 24px;
 }
 
-.footer a{
-    background-color: var(--neutral-white);
+.nav a{
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav img{
+    display: inline-block;
+    width: 24px;
+}
+.nav p{
+    display: inline-block;
     color: var(--principal-M);
-    display: flex;
-    flex-direction: row;
 }
 
 /*Responsive*/
