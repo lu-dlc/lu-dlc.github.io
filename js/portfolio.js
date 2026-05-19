@@ -2,6 +2,9 @@
 document.addEventListener("DOMContentLoaded",init);
 
 function init(){
+    //quita el elemento 00 del array
+    proyects.shift();
+
     sortLinks();
     printLinks();
     showDesc();
@@ -11,7 +14,9 @@ function init(){
 function printLinks(){
     //Introduce en el html la lista de proyectos
     let html = "";
+    
 
+    
     for(i=0; i<proyects.length; i++){
         html += `<a href="` + proyects[i].id + `.html" id="`+ proyects[i].id + `"> »` + proyects[i].id + `-` + proyects[i].title + `</a>`
         //console.log("title is " + html);
@@ -157,14 +162,14 @@ function showDesc(){
         htmlImg = `<img src="img/preview/motion.webp"></img>`;
         desc.innerHTML = htmlText;
         img.innerHTML = htmlImg;
-    })
+    });
 
     link00.addEventListener("mouseleave",function(){
         htmlText = "<b>Nombre proyecto: []</b> <br> Año: [] <br> Descripción: []"
         htmlImg = `<img src="img/preview/empty.webp">`;
         desc.innerHTML = htmlText;
         img.innerHTML = htmlImg;
-    })
+    });
 
     console.log(functions);
 }

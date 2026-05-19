@@ -1,14 +1,14 @@
 //js base de datos
 const proyects = //array de objectos con información de los proyectos
     [
-        /*{
+        {
         id: "00",
         img: "motion",
         title: "Motion Design Collection",
         year:"2023-2026",
         date: "202603",
         description: "Incluye mi demoreel y proyectos de motion graphics realizados a lo largo de los años, no dudes en echarle un ojo ;)",
-        },*/
+        },
         {
         id: "01",   
         img: "1984",
