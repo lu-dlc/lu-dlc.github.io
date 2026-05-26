@@ -64,6 +64,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active {
+    color: var(--neutral-black);
+}
+
 button {
     font-family: var(--body);
     color: var(--principal-M);
@@ -111,6 +115,11 @@ header img{
     height: 50%;
 }
 /*class styles*/
+.headerColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .content{
     display: flex;
     flex-direction: row;
@@ -222,7 +231,7 @@ header img{
 .fourImg{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap:24px;
+    gap:12px;
 }
 
 .sixImg{
