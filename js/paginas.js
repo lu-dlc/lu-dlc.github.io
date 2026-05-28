@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",init);
 
 function init(){
     printNav();
+    printMenu();
 }
 
 function printNav(){
@@ -43,4 +44,17 @@ function printNav(){
             <a href="` + next + `.html"> <p>NEXT</p> <img src="img/icons/flecha-der.svg"> </a>`
     nav.innerHTML = html;
 
+}
+
+function printMenu(){
+    let html = "";
+    let menu = document.getElementById("menu")
+
+    for(i=0; i<proyects.length; i++){
+        html += `<a href="` + proyects[i].id + `.html">` + proyects[i].id + `-` + proyects[i].title + `</a>`
+    }
+
+    html+= `<a href="about.html"> about </a>`
+    console.log(html)
+    menu.innerHTML = html;
 }

@@ -25,17 +25,20 @@ bookletCarousel = function(){
     ]
 
     let html1= "";
+    let html2 =""
     let img1 = document.getElementById("imagenBooklet1");
 
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
     let posicionActual1 = 0;
+    let posicionSiguiente2 = 1;
     let intervalo;
 
     function renderizarImagen() {
         html1= IMAGENES1[posicionActual1];
+        html2 = IMAGENES1[posicionSiguiente2]
         console.log(IMAGENES1[posicionActual1])
         console.log(html1);
-        img1.innerHTML = `<img src= "img/disco/booklet/` + html1 + `.webp">`;
+        img1.innerHTML = `<img src="img/disco/booklet/` + html2 + `.webp" style="width: 0%"> <img src= "img/disco/booklet/` + html1 + `.webp">`;
 
     }
 
@@ -46,6 +49,12 @@ bookletCarousel = function(){
             posicionActual1 = 0;
         } else {
             posicionActual1++;
+        }
+
+        if(posicionSiguiente2 >= IMAGENES1.length - 1) {
+            posicionSiguiente2 = 0;
+        } else {
+            posicionSiguiente2++;
         }
 
         renderizarImagen();
