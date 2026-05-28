@@ -64,8 +64,8 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-    color: var(--neutral-black);
+a:visited {
+    color: var(--principal-L);
 }
 
 button {
@@ -119,6 +119,11 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+.pagesMenu{
+    display: flex;
+    font-size: 0.875em;
+    gap: 24px;
 }
 .content{
     display: flex;
