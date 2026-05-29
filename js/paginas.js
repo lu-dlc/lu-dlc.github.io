@@ -63,10 +63,10 @@ function printMenu(){
     }
 
     if (thisName == "About me"){
-        html += `<p>About me</p>`
+        html += `<p>About</p>`
     }
     else{
-        html+= `<a href="about.html"> About me </a>`
+        html+= `<a href="about.html"> About</a>`
     }
 
     console.log(html)

@@ -68,7 +68,7 @@ function sortLinks(){
         })
 
     nameSort.addEventListener("click", function(){
-        sortType = "name";
+        sortType = "nombre";
 
         proyects.sort(function(a,b){
             let x = a.title.toLowerCase();
@@ -87,7 +87,7 @@ function sortLinks(){
     })
 
     yearSort.addEventListener("click", function(){
-        sortType = "year";
+        sortType = "año";
 
         proyects.sort(function(a, b){return a.date - b.date});
         if (order == "descending"){

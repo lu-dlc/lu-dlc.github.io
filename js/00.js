@@ -101,7 +101,7 @@ function sortVideos(){
         })
 
     nameSort.addEventListener("click", function(){
-        sortType = "name";
+        sortType = "nombre";
 
         videos.sort(function(a,b){
             let x = a.name.toLowerCase();
@@ -119,7 +119,7 @@ function sortVideos(){
     })
 
     yearSort.addEventListener("click", function(){
-        sortType = "year";
+        sortType = "año";
 
         videos.sort(function(a, b){return a.date - b.date});
         if (order == "descending"){
