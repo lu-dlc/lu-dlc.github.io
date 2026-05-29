@@ -111,17 +111,24 @@ header img{
     height: 50%;
 }
 /*class styles*/
-.headerColumn{
+.headerColumn{ /*elementos del header en vertical*/
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.pagesMenu{
+.pagesMenu{ /*Navegación entre páginas desde las páginas*/
     display: flex;
     font-size: 0.875em;
     gap: 24px;
 }
-.content{
+
+.showVideos{ /*Bloque dentro del body que contiene los videos en 00*/
+    display: flex;
+    flex-direction: column;
+    gap:24px
+}
+
+.content{ /*Un bloque horizontal de contenido dentro del body*/
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -131,6 +138,7 @@ header img{
     justify-self: center;
     align-items: center;
 }
+
 .threeFour{ /*Columna de 3/4 - 75%*/
     display: flex;
     flex-direction: row;
@@ -173,7 +181,7 @@ header img{
 	width: 33%;
 }
 
-.proyectList{
+.proyectList{ /*Navegación a páginas desde el home*/
     display: flex;
     flex-direction: column;
     gap: 4px
@@ -183,7 +191,7 @@ header img{
     width: fit-content;
 }
 
-.navbar{
+.navbar{ /*Barra de sorting*/
     display: flex;
     flex-direction: row;
     justify-content: right;
