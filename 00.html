@@ -17,7 +17,9 @@
 
     <!--Import javascript files-->
         <script src="js/proyectList.js"></script>
+        <script src="js/00.js"></script>
         <script src="js/paginas.js"></script>
+        
 </head>
 <body>
     <!--Header-->
@@ -25,9 +27,25 @@
         <div class="headerColumn">
             <a href="index.html"><img src="img/favicon-link.gif" alt="Web ID: luu.dlc."></a>
             <div id="menu" class="pagesMenu"></div>
+            <div class="videoList" id="videoList"></div>
+                <div class="navbar">
+                    <p>Sort videos by</p>
+                    <div class="dropdown">
+                        <button id="sort">Sort button</button>
+                        <div id="dropdown-sort" class="dropdown-sort">
+                            <p id = "ID-sort">ID</p>
+                            <p id = "name-sort">name</p>
+                            <p id = "year-sort">year</p>
+                        </div>
+                    </div>
+                    <button id="switch"></button>
+                </div>
         </div>
     </header>
 
+    <div id="showVideos" class="showVideos"></div>
+
+    <!--
     <div class="content">
         <div class="threeFour">
             <iframe src="https://player.vimeo.com/video/1194159258?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
@@ -47,6 +65,7 @@
             <iframe src="https://player.vimeo.com/video/1194157681?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe>
         </div>
     </div>
+    -->
 
     <!--Footer-->
 	<div class="footer">
