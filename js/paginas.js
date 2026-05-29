@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded",init);
 
 function init(){
-    printNav();
     printMenu();
+    printNav(); 
 }
 
 function printNav(){
@@ -47,14 +47,28 @@ function printNav(){
 }
 
 function printMenu(){
+    let thisName = document.getElementById("name").innerText;
+    let thisId = thisName.substring(0,2);
+
     let html = "";
     let menu = document.getElementById("menu")
 
     for(i=0; i<proyects.length; i++){
-        html += `<a href="` + proyects[i].id + `.html">` + proyects[i].id + `-` + proyects[i].title + `</a>`
+        if (thisId == proyects[i].id){
+            html += `<p>` + proyects[i].id + `-` + proyects[i].title + `</p>`
+        }
+        else{
+            html += `<a href="` + proyects[i].id + `.html">` + proyects[i].id + `-` + proyects[i].title + `</a>`
+        }
     }
 
-    html+= `<a href="about.html"> about </a>`
+    if (thisName == "About me"){
+        html += `<p>About me</p>`
+    }
+    else{
+        html+= `<a href="about.html"> About me </a>`
+    }
+
     console.log(html)
     menu.innerHTML = html;
 }
