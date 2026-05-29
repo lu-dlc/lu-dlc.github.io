@@ -26,8 +26,8 @@ function printLinks(){
 
 //función para ordenar los links
 function sortLinks(){
-    const switchOrder = document.getElementById("switch"); //get switch button
-    const icon = document.getElementById("iconSwitch"); //get icon
+    let switchOrder = document.getElementById("switch"); //get switch button
+    //let icon = document.getElementById("iconSwitch"); //get icon
     let order = "ascending";
     switchOrder.innerHTML = '<img src="img/icons/order-' + order + '.svg" style="width: 24px;"></img>';
     proyects.sort(function(a, b){return a.id - b.id});
