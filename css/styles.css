@@ -64,10 +64,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: var(--principal-L);
-}
-
 button {
     font-family: var(--body);
     color: var(--principal-M);
