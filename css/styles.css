@@ -111,24 +111,17 @@ header img{
     height: 50%;
 }
 /*class styles*/
-.headerColumn{ /*elementos del header en vertical*/
+.headerColumn{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.pagesMenu{ /*Navegación entre páginas desde las páginas*/
+.pagesMenu{
     display: flex;
     font-size: 0.875em;
     gap: 24px;
 }
-
-.showVideos{ /*Bloque dentro del body que contiene los videos en 00*/
-    display: flex;
-    flex-direction: column;
-    gap:24px
-}
-
-.content{ /*Un bloque horizontal de contenido dentro del body*/
+.content{
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -138,7 +131,6 @@ header img{
     justify-self: center;
     align-items: center;
 }
-
 .threeFour{ /*Columna de 3/4 - 75%*/
     display: flex;
     flex-direction: row;
@@ -181,7 +173,7 @@ header img{
 	width: 33%;
 }
 
-.proyectList{ /*Navegación a páginas desde el home*/
+.proyectList{
     display: flex;
     flex-direction: column;
     gap: 4px
@@ -191,7 +183,7 @@ header img{
     width: fit-content;
 }
 
-.navbar{ /*Barra de sorting*/
+.navbar{
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -296,16 +288,21 @@ header img{
 
 /*Responsive*/
 @media only screen and (max-width:600px) {
-    .body{padding:0px 16px}
-    .content{flex-direction: column;}
-    .threeFour{width: 100%;}
+    body{padding:0px 16px}
+    header{align-items: center; height:10vh}
+    .content{flex-direction: column; gap:16px; flex-shrink: 0;}
+    .threeFour{width: 100%; flex-shrink: 0;}
     .oneFour{width:100%}
+    .twoImg{grid-template-columns: auto; gap: 16px}
+    .sixImg{grid-template-columns: auto auto; gap: 16px}
     .eightImg{grid-template-columns: auto auto; gap: 16px}
+    .preview{display: none;}
+    .pagesMenu{display: none;}
 }
 
 @media only screen and (min-width: 601px) and (max-width:989px){
     .content{flex-direction: column;}
-    .threeFour{width: 100%;}
+    .threeFour{width: 100%; flex-shrink: 0;}
     .oneFour{width:100%}
     .eightImg{grid-template-columns: auto auto auto auto; gap: 24px}
 }
