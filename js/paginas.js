@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded",init);
 
 function init(){
-    printMenu();
-    printNav(); 
+    //printMenu();
+    printNav();
+    printDropDown();
 }
 
 function printNav(){
@@ -66,9 +67,38 @@ function printMenu(){
         html += `<p>About</p>`
     }
     else{
-        html+= `<a href="about.html"> About</a>`
+        html+= `<a href="about.html">About</a>`
     }
 
     console.log(html)
     menu.innerHTML = html;
+}
+
+function printDropDown(){
+    let thisName = document.getElementById("name").innerText;
+    let thisId = thisName.substring(0,2);
+
+    let dropDown = document.getElementById("dropdown-sort");
+    let html = "";
+
+    for(i=0; i<proyects.length; i++){
+        if (thisId == proyects[i].id){
+            html += `<p>` + proyects[i].id + `-` + proyects[i].title + `</p>`
+        }
+        else{
+            html += `<a href="` + proyects[i].id + `.html">` + proyects[i].id + `-` + proyects[i].title + `</a>`
+        }
+        
+    }
+
+    if (thisName == "About me"){
+        html += `<p>About</p>`
+    }
+    else{
+        html+= `<a href="about.html">About</a>`
+    }
+
+    console.log(html);
+
+    dropDown.innerHTML = html;
 }
