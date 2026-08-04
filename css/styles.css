@@ -205,6 +205,7 @@ header img{
     background-color: var(--neutral-white);
     /* margin-top: 16px; */
     padding:0px;
+    gap:4px;
     z-index: 1;
     cursor: pointer;
     right: 0;
@@ -214,9 +215,18 @@ header img{
     display: block;
 }
 
-.dropdown-sort p{
+.dropdown-sort a{
+    display: inline-flex;
+    width: 300px;
     padding: 0px;
     color:var(--principal-M) ;
+}
+
+.dropdown-sort p{
+    display: inline-flex;
+    width: fit-content;
+    padding: 0px;
+    color:var(--neutral-black) ;
 }
 
 .buttonInv{
