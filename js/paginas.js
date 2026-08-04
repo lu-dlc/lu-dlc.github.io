@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded",init);
 
 function init(){
     //printMenu();
-    printNav();
     printDropDown();
+    printNav();
+    
 }
 
 function printNav(){
