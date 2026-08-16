@@ -107,9 +107,10 @@ header{
     max-width: 1520px;
 }
 
-header img{
+/*header img{
     height: 50%;
-}
+}*/
+
 /*class styles*/
 .headerColumn{
     display: flex;
