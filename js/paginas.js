@@ -79,11 +79,19 @@ function printDropDown(){
     let thisName = document.getElementById("name").innerText;
     let thisId = thisName.substring(0,2);
 
+    let location = document.getElementById("location");
+    let locHtml = "";
     let dropDown = document.getElementById("dropdown-sort");
     let html = "";
 
+    
+    //locHtml += ;
+   //console.log(locHtml);
+    //location.innerHTML = proyects[i].id + '-' + proyects[i].title;
+
     for(i=0; i<proyects.length; i++){
         if (thisId == proyects[i].id){
+            location.innerHTML = proyects[i].id + '-' + proyects[i].title;
             html += `<p>` + proyects[i].id + `-` + proyects[i].title + `</p>`
         }
         else{
@@ -93,6 +101,7 @@ function printDropDown(){
     }
 
     if (thisName == "About me"){
+        location.innerHTML = `About me`;
         html += `<p>About</p>`
     }
     else{
